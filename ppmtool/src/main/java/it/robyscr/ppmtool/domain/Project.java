@@ -26,7 +26,7 @@ public class Project {
 
 	@NotBlank(message = "Project Identifier is required")
 	@Size(min = 4, max = 5, message = "Please use 4 to 5 characters")
-	@Column(updatable = false, unique = true)
+	@Column(updatable = false, unique = true) //errors are after the validation, is on the DB layer
 	private String projectIdentifier;
 
 	@NotBlank(message = "Project Description is required")
